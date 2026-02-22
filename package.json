@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jawadonsol.com",
+  "homepage": "https://dodo1653.github.io/jawad",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
