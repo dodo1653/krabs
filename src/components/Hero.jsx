@@ -15,48 +15,61 @@ const Hero = () => {
           src={heroImage}
           alt=""
           className="w-full h-full object-cover object-center"
-          style={{ filter: 'grayscale(80%) brightness(0.25) contrast(1.1)' }}
+          style={{ filter: 'grayscale(80%) brightness(0.28) contrast(1.1)' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-terminal-bg/80 via-terminal-bg/60 to-terminal-bg" />
+        <div className="absolute inset-0 bg-gradient-to-b from-terminal-bg/60 via-terminal-bg/30 to-terminal-bg" />
       </div>
 
-      <div className="relative z-10 text-center px-6 w-full max-w-3xl">
-        <div 
-          className="transition-all duration-700 ease-out"
-          style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'translateY(0)' : 'translateY(10px)' }}
+      <div className="relative z-10 text-center px-6 w-full max-w-2xl">
+        <p 
+          className="text-xs tracking-[0.3em] uppercase mb-6 transition-all duration-700 ease-out"
+          style={{ color: 'var(--color-text-muted)', opacity: loaded ? 1 : 0 }}
         >
-          <p className="label mb-10">Solana Network</p>
-        </div>
+          Solana Network
+        </p>
 
         <h1 
-          className="text-4xl sm:text-5xl md:text-6xl font-medium mb-6 transition-all duration-700 ease-out delay-100"
-          style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'translateY(0)' : 'translateY(10px)' }}
+          className="text-6xl sm:text-7xl md:text-8xl font-medium mb-5 transition-all duration-700 ease-out delay-100"
+          style={{ opacity: loaded ? 1 : 0, transform: loaded ? 'translateY(0)' : 'translateY(15px)' }}
         >
           $JAWAD
         </h1>
 
         <p 
-          className="text-base sm:text-lg mb-16 max-w-md mx-auto transition-all duration-700 ease-out delay-200"
-          style={{ color: 'var(--color-text-secondary)', opacity: loaded ? 1 : 0, transform: loaded ? 'translateY(10px)' : 'translateY(10px)' }}
+          className="text-base sm:text-lg mb-10 max-w-md mx-auto transition-all duration-700 ease-out delay-200"
+          style={{ color: 'var(--color-text-secondary)', opacity: loaded ? 1 : 0 }}
         >
           A symbol of remembrance. A voice for the voiceless.
         </p>
 
         <div 
-          className="transition-all duration-700 ease-out delay-300"
+          className="flex flex-wrap justify-center gap-3 transition-all duration-700 ease-out delay-300"
           style={{ opacity: loaded ? 1 : 0 }}
         >
-          <a 
-            href="#story"
-            className="inline-flex items-center gap-2 text-sm transition-colors duration-300 hover:text-white"
-            style={{ color: 'var(--color-text-muted)' }}
-          >
-            <span>Scroll</span>
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
+          <a href="https://pump.fun/coin/81ZjC8zjcTyFkppkPCqdCUi2Xtd99GEbihzpN2k2pump" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1-7.5v-5l4.5 2.5-4.5 2.5z"/></svg>
+            Buy Token
+          </a>
+          <a href="https://dexscreener.com/solana/81ZjC8zjcTyFkppkPCqdCUi2Xtd99GEbihzpN2k2pump" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            View Chart
+          </a>
+          <a href="https://x.com/i/communities/2025543066569056377" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Community
+          </a>
+          <a href="#support" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+            Donate
           </a>
         </div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2" style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.7s ease-out 0.5s' }}>
+        <a href="#story" className="text-xs flex flex-col items-center gap-1" style={{ color: 'var(--color-text-muted)' }}>
+          <span>Scroll</span>
+          <svg className="w-4 h-4 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/></svg>
+        </a>
       </div>
     </section>
   )
