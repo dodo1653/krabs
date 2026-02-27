@@ -49,17 +49,17 @@ const Hero = () => {
           className="flex flex-wrap justify-center gap-3 transition-all duration-700 ease-out delay-300"
           style={{ opacity: loaded ? 1 : 0 }}
         >
-          <a href="https://pump.fun/coin/7xKXtg2QhGjGxS9KkrkDjmwCcAWmmMjbsY3N3zMUwWwf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+          <a href="https://pump.fun/coin/CA" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm-1-7.5v-5l4.5 2.5-4.5 2.5z"/></svg>
             Buy Token
           </a>
-          <a href="https://dexscreener.com/solana/7xKXtg2QhGjGxS9KkrkDjmwCcAWmmMjbsY3N3zMUwWwf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+          <a href="https://dexscreener.com/solana/CA" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-            View Chart
+            Chart
           </a>
-          <a href="https://x.com/MrKrabsAI" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
+          <a href="https://x.com/i/communities/2027349547975057746" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            Follow
+            Community
           </a>
           <a href="#disclaimer" className="inline-flex items-center gap-2 px-5 py-2.5 border text-xs transition-all hover:bg-white hover:text-black" style={{ borderColor: 'rgba(255,255,255,0.15)' }}>
             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
