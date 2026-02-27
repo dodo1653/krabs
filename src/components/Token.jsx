@@ -5,7 +5,7 @@ const Token = () => {
   const [copied, setCopied] = useState(false)
   const ref = useRef(null)
 
-  const CA = "81ZjC8zjcTyFkppkPCqdCUi2Xtd99GEbihzpN2k2pump"
+  const CA = "7xKXtg2QhGjGxS9KkrkDjmwCcAWmmMjbsY3N3zMUwWwf"
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -22,14 +22,19 @@ const Token = () => {
   }
 
   return (
-    <section ref={ref} className="py-20 md:py-24" style={{ backgroundColor: 'var(--color-terminal-surface)' }}>
-      <div className="terminal-container">
+    <section id="token" ref={ref} className="py-20 md:py-24 relative overflow-hidden" style={{ backgroundColor: 'var(--color-terminal-bg)' }}>
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-amber-900/30 to-transparent" />
+        <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-gradient-to-t from-red-900/20 to-transparent" />
+      </div>
+      
+      <div className="terminal-container relative">
         <div 
           className="text-center mb-10 transition-all duration-700"
           style={{ opacity: visible ? 1 : 0, transform: visible ? 'translateY(0)' : 'translateY(15px)' }}
         >
           <p className="label mb-3">Token</p>
-          <h2 className="text-2xl sm:text-3xl font-medium">$JAWAD</h2>
+          <h2 className="text-2xl sm:text-3xl font-medium">$KRABS</h2>
         </div>
 
         <div 
@@ -68,9 +73,9 @@ const Token = () => {
               <p className="text-sm">Active</p>
             </div>
             <div className="p-4 border text-center" style={{ borderColor: 'rgba(255,255,255,0.05)' }}>
-              <svg className="w-5 h-5 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ color: 'var(--color-text-muted)' }}><path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-              <p className="text-xs mb-1" style={{ color: 'var(--color-text-muted)' }}>Purpose</p>
-              <p className="text-sm">Awareness</p>
+              <svg className="w-5 h-5 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ color: 'var(--color-text-muted)' }}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <p className="text-xs mb-1" style={{ color: 'var(--color-text-muted)' }}>Royalty</p>
+              <p className="text-sm">1%</p>
             </div>
           </div>
 
