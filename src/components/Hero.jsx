@@ -14,7 +14,7 @@ const Hero = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
       </div>
       
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/60 via-transparent to-[#050505]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/30 via-transparent to-[#050505]" />
 
       <div className="relative z-10 text-center px-6 w-full max-w-2xl pt-20">
         <p 
