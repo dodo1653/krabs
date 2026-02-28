@@ -23,6 +23,15 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
       </div>
 
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/3 left-[10%] w-1 h-1 bg-amber-400/30 rounded-full animate-[float_8s_ease-in-out_infinite]" />
+        <div className="absolute top-1/2 left-[20%] w-1.5 h-1.5 bg-amber-400/20 rounded-full animate-[float_12s_ease-in-out_infinite]" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/4 right-[15%] w-1 h-1 bg-red-400/20 rounded-full animate-[float_10s_ease-in-out_infinite]" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-1/3 right-[25%] w-1 h-1 bg-amber-400/25 rounded-full animate-[float_9s_ease-in-out_infinite]" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-2/3 left-[5%] w-1 h-1 bg-red-400/15 rounded-full animate-[float_11s_ease-in-out_infinite]" style={{ animationDelay: '4s' }} />
+        <div className="absolute bottom-1/4 left-[30%] w-1.5 h-1.5 bg-amber-400/20 rounded-full animate-[float_7s_ease-in-out_infinite]" style={{ animationDelay: '5s' }} />
+      </div>
+
       <div className="relative z-10 text-center px-6 w-full max-w-2xl pt-20">
         <p 
           className="text-xs tracking-[0.3em] uppercase mb-6 transition-all duration-700 ease-out"
