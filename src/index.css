@@ -78,7 +78,6 @@ body::before {
     radial-gradient(ellipse 50% 40% at 50% 20%, rgba(251, 191, 36, 0.2) 0%, transparent 40%);
   pointer-events: none;
   z-index: -1;
-  animation: drift 20s ease-in-out infinite;
 }
 
 body::after {
