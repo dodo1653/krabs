@@ -24,9 +24,7 @@ const Navbar = () => {
       <div 
         className="flex items-center gap-1 px-2 py-1.5 rounded-full backdrop-blur-xl"
         style={{ 
-          backgroundColor: 'rgba(5, 5, 5, 0.7)', 
-          border: '1px solid rgba(217, 119, 6, 0.15)',
-          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(217, 119, 6, 0.05)'
+          backgroundColor: 'rgba(10, 10, 10, 0.6)', 
         }}
       >
         <a 
