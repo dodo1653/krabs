@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import eveKrabs from '../../public/eve-krabs.png'
+import heroBg from '../assets/Gemini_Generated_Image_ovf6v4ovf6v4ovf6.png'
 
 const Hero = () => {
   const [loaded, setLoaded] = useState(false)
@@ -10,11 +10,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <img src={eveKrabs} alt="Mr. Krabs" className="w-[500px] sm:w-[600px] md:w-[700px] opacity-20 object-contain" />
+      <div className="absolute inset-0 opacity-10">
+        <img src={heroBg} alt="" className="w-full h-full object-cover" />
       </div>
-
-      <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-transparent to-[#050505]" />
 
       <div className="relative z-10 text-center px-6 w-full max-w-2xl pt-20">
         <div className="flex items-center justify-center gap-2 mb-4" style={{ opacity: loaded ? 1 : 0 }}>
