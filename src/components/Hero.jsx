@@ -45,18 +45,6 @@ const Hero = () => {
           >
             eve.army
           </a>
-          <span 
-            className="text-[10px] tracking-[0.3em] uppercase"
-            style={{ color: 'rgba(255,255,255,0.3)' }}
-          >
-            •
-          </span>
-          <span 
-            className="text-[10px] tracking-[0.3em] uppercase"
-            style={{ color: 'rgba(251, 191, 36, 0.6)' }}
-          >
-            Moltspaces AI Agent
-          </span>
         </div>
 
         <p 
