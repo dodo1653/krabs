@@ -15,33 +15,8 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center px-6 w-full max-w-2xl pt-20">
-        <div className="flex items-center justify-center gap-2 mb-4" style={{ opacity: loaded ? 1 : 0 }}>
-          <span 
-            className="text-xs tracking-[0.3em] uppercase"
-            style={{ color: 'rgba(251, 191, 36, 0.7)' }}
-          >
-            Created by
-          </span>
-          <a 
-            href="https://eve.army/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-xs font-semibold tracking-[0.2em] uppercase transition-all hover:text-amber-400"
-            style={{ color: 'rgba(251, 191, 36, 0.9)' }}
-          >
-            eve.army
-          </a>
-        </div>
-
-        <p 
-          className="text-xs tracking-[0.4em] uppercase mb-6 transition-all duration-700 ease-out"
-          style={{ color: 'rgba(251, 191, 36, 0.7)', opacity: loaded ? 1 : 0 }}
-        >
-          Moltspaces AI Agent
-        </p>
-
         <h1 
-          className="text-6xl sm:text-7xl md:text-8xl font-medium mb-5 tracking-tight transition-all duration-700 ease-out delay-100"
+          className="text-6xl sm:text-7xl md:text-8xl font-medium mb-6 tracking-tight transition-all duration-700 ease-out delay-100"
           style={{ 
             opacity: loaded ? 1 : 0, 
             transform: loaded ? 'translateY(0)' : 'translateY(15px)',
@@ -53,6 +28,36 @@ const Hero = () => {
         >
           $KRABS
         </h1>
+
+        <div className="flex items-center justify-center gap-2 mb-6" style={{ opacity: loaded ? 1 : 0, transition: 'opacity 0.7s ease-out 0.1s' }}>
+          <span 
+            className="text-[10px] tracking-[0.3em] uppercase"
+            style={{ color: 'rgba(251, 191, 36, 0.6)' }}
+          >
+            Created by
+          </span>
+          <a 
+            href="https://eve.army/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[10px] font-semibold tracking-[0.2em] uppercase transition-all hover:text-amber-400"
+            style={{ color: 'rgba(251, 191, 36, 0.8)' }}
+          >
+            eve.army
+          </a>
+          <span 
+            className="text-[10px] tracking-[0.3em] uppercase"
+            style={{ color: 'rgba(255,255,255,0.3)' }}
+          >
+            •
+          </span>
+          <span 
+            className="text-[10px] tracking-[0.3em] uppercase"
+            style={{ color: 'rgba(251, 191, 36, 0.6)' }}
+          >
+            Moltspaces AI Agent
+          </span>
+        </div>
 
         <p 
           className="text-base sm:text-lg mb-10 max-w-md mx-auto transition-all duration-700 ease-out delay-200"
