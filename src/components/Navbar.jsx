@@ -22,12 +22,17 @@ const Navbar = () => {
       }}
     >
       <div 
-        className="flex items-center gap-1 px-1 py-1 rounded-full backdrop-blur-md"
-        style={{ backgroundColor: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.08)' }}
+        className="flex items-center gap-1 px-2 py-1.5 rounded-full backdrop-blur-xl"
+        style={{ 
+          backgroundColor: 'rgba(5, 5, 5, 0.7)', 
+          border: '1px solid rgba(217, 119, 6, 0.15)',
+          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(217, 119, 6, 0.05)'
+        }}
       >
         <a 
           href="#hero" 
-          className="px-4 py-2 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 hover:bg-white/10"
+          className="px-4 py-1.5 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 hover:bg-amber-500/20"
+          style={{ background: 'linear-gradient(135deg, #fbbf24, #d97706)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
         >
           $KRABS
         </a>
@@ -38,8 +43,8 @@ const Navbar = () => {
           <a
             key={item.label}
             href={item.href}
-            className="px-4 py-2 text-sm font-medium tracking-wide rounded-full transition-all duration-300 hover:bg-white/10"
-            style={{ color: 'rgba(255,255,255,0.7)' }}
+            className="px-4 py-1.5 text-sm font-medium tracking-wide rounded-full transition-all duration-300 hover:text-amber-400 hover:bg-amber-500/10"
+            style={{ color: 'rgba(254, 254, 254, 0.6)' }}
           >
             {item.label}
           </a>
