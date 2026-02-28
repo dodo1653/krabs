@@ -16,35 +16,34 @@ const Navbar = () => {
 
   return (
     <nav 
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
       style={{ 
         opacity: visible ? 1 : 0,
       }}
     >
-      <div className="absolute inset-0 border-b backdrop-blur-md" style={{ borderColor: 'rgba(255,255,255,0.03)', backgroundColor: 'rgba(0,0,0,0.2)' }} />
-      <div className="relative max-w-4xl mx-auto px-8 py-4 flex items-center justify-between">
+      <div 
+        className="flex items-center gap-1 px-1 py-1 rounded-full backdrop-blur-md"
+        style={{ backgroundColor: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.08)' }}
+      >
         <a 
           href="#hero" 
-          className="text-base font-semibold tracking-wider transition-all duration-300 hover:text-amber-400"
+          className="px-4 py-2 text-sm font-semibold tracking-wide rounded-full transition-all duration-300 hover:bg-white/10"
         >
           $KRABS
         </a>
         
-        <div className="flex items-center gap-1">
-          {navItems.map((item, i) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="relative px-4 py-2 text-sm font-medium tracking-wide transition-all duration-300 hover:text-amber-400 group"
-              style={{ color: 'rgba(255,255,255,0.7)' }}
-            >
-              {item.label}
-              <span 
-                className="absolute bottom-1 left-1/2 -translate-x-1/2 w-0 h-px bg-amber-400 transition-all duration-300 group-hover:w-6"
-              />
-            </a>
-          ))}
-        </div>
+        <div className="w-px h-4 mx-1" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
+        
+        {navItems.map((item, i) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="px-4 py-2 text-sm font-medium tracking-wide rounded-full transition-all duration-300 hover:bg-white/10"
+            style={{ color: 'rgba(255,255,255,0.7)' }}
+          >
+            {item.label}
+          </a>
+        ))}
       </div>
     </nav>
   )

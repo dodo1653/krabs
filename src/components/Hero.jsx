@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-amber-950/30 via-amber-900/10 to-terminal-bg" />
+      <div className="absolute inset-0 bg-gradient-to-b from-amber-950/40 via-amber-900/15 to-terminal-bg animate-gradient" />
       
       <div className="absolute inset-0 opacity-20">
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
@@ -18,19 +18,7 @@ const Hero = () => {
       
       <div className="absolute inset-0 bg-gradient-to-b from-terminal-bg/80 via-transparent to-terminal-bg" />
       
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
-      </div>
 
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 left-[10%] w-1 h-1 bg-amber-400/30 rounded-full animate-[float_8s_ease-in-out_infinite]" />
-        <div className="absolute top-1/2 left-[20%] w-1.5 h-1.5 bg-amber-400/20 rounded-full animate-[float_12s_ease-in-out_infinite]" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/4 right-[15%] w-1 h-1 bg-red-400/20 rounded-full animate-[float_10s_ease-in-out_infinite]" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-1/3 right-[25%] w-1 h-1 bg-amber-400/25 rounded-full animate-[float_9s_ease-in-out_infinite]" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-2/3 left-[5%] w-1 h-1 bg-red-400/15 rounded-full animate-[float_11s_ease-in-out_infinite]" style={{ animationDelay: '4s' }} />
-        <div className="absolute bottom-1/4 left-[30%] w-1.5 h-1.5 bg-amber-400/20 rounded-full animate-[float_7s_ease-in-out_infinite]" style={{ animationDelay: '5s' }} />
-      </div>
 
       <div className="relative z-10 text-center px-6 w-full max-w-2xl pt-20">
         <p 
