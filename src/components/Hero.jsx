@@ -4,8 +4,8 @@ import heroBg from '../assets/Gemini_Generated_Image_ovf6v4ovf6v4ovf6.png'
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-contain object-center" />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img src={heroBg} alt="" className="w-full h-full object-cover" />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/60 via-[#050505]/30 to-[#050505]" />
