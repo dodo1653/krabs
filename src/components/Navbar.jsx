@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false)
+  const [launchLive, setLaunchLive] = useState(true)
 
   useEffect(() => {
     setVisible(true)
@@ -15,12 +16,36 @@ const Navbar = () => {
   ]
 
   return (
-    <nav 
-      className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
-      style={{ 
-        opacity: visible ? 1 : 0,
-      }}
-    >
+    <>
+      {launchLive && (
+        <div className="fixed top-0 left-0 right-0 z-[60] py-3 text-center font-bold text-lg" style={{ 
+          background: 'linear-gradient(90deg, #16a34a, #22c55e)', 
+          color: 'white',
+          boxShadow: '0 0 30px rgba(34, 197, 94, 0.5), 0 4px 20px rgba(0,0,0,0.3)',
+          animation: 'glow 2s ease-in-out infinite alternate'
+        }}>
+          <span className="inline-flex items-center gap-3">
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+            </span>
+            <span className="tracking-wider">🎉 CA IS LIVE: 0x1234...5678</span>
+          </span>
+          <style>{`
+            @keyframes glow {
+              from { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 4px 20px rgba(0,0,0,0.3); }
+              to { box-shadow: 0 0 40px rgba(34, 197, 94, 0.7), 0 4px 20px rgba(0,0,0,0.3); }
+            }
+          `}</style>
+        </div>
+      )}
+      <nav 
+        className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
+        style={{ 
+          opacity: visible ? 1 : 0,
+          marginTop: launchLive ? '32px' : '0',
+        }}
+      >
       <div 
         className="flex items-center gap-1 px-2 py-1.5 rounded-full backdrop-blur-xl"
         style={{ 
@@ -49,6 +74,7 @@ const Navbar = () => {
         ))}
       </div>
     </nav>
+    </>
   )
 }
 
